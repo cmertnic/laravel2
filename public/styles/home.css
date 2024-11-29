@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: rgb(16, 17, 17);
+    color: white;
+}
+
+header {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 200px;
+    flex-wrap: wrap;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
+}
+.menu a{ 
+    color: aliceblue;
+    text-decoration: none;
+}
+.menu a:hover{ 
+    color: rgb(157, 206, 248);
+    text-decoration: none;
+}
+.logo {
+    margin-right: 50%;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.fish{
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+.fish_img{
+    width: 500px;
+}
+footer{
+    display: flex;
+    justify-content: end;
+    margin-top: 150px;
+    width: 1800px;
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 200px;
+    height: 250px;
+}
+
+.card_img_top {
+    width: 200px;
+    height: 200px;
+}
+
+.card_body {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_title {
+    font-weight: bold;
+    margin: 0;
+}
+
+.card_text {
+    color: #dedfe0;
+}
+
+table{
+    background-color: rgb(75, 75, 75);
+    width: 1800px;
+    height: auto;
+    align-items: center;
+    text-align: center;
+}
+table th{
+ width: 200px;   
+ border: 1px solid #A9E2CC;
+}
+.button_create{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.delete{
+    cursor: pointer;
+    width: 100%;
+}

@@ -24,17 +24,23 @@
         <th>{{ $item->number }}</th>
         <th>{{ $item['description'] }}</th>
         <th>{{ $item['created_at'] }}</th>
-        <th>
-          @if ($item['status_id'] == 1)
-              Новое
-          @elseif ($item['status_id'] == 2)
-              Отклонено
-          @elseif ($item['status_id'] == 3)
-              Принято
-          @else
-              Неизвестный статус
-          @endif
-      </th>
+        <th style="color: 
+        @if ($item['status_id'] == 1)
+            black; 
+        @elseif ($item['status_id'] == 2)
+            red; 
+        @elseif ($item['status_id'] == 3)
+            blue; 
+        @endif">
+        @if ($item['status_id'] == 1)
+            Новое
+        @elseif ($item['status_id'] == 2)
+            Отклонено
+        @elseif ($item['status_id'] == 3)
+            Принято
+        @endif
+    </th>
+    
       </tr>       
     @endforeach 
   </table>
@@ -42,7 +48,7 @@
 </div>  
 <div class="button_create">
 <button data-modal-target="default-modal" data-modal-toggle="default-modal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center" type="button">
-создать жалобу
+создать заявление
 </button>
 </div>  
 </div>
@@ -59,7 +65,7 @@
             <!-- Modal header -->
             <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
                 <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                    Создание жалобы
+                    Создание заявления
                 </h3>
                 <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal">
                   <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">

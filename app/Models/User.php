@@ -9,7 +9,7 @@ use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {  public function FullName(){
-    return $this->surname.' '.$this->name.' '.$this->midlename;
+    return $this->middlename.' '.$this->name.' '.$this->surname;
 }
 
      const ADMIN_ROLE='admin';
